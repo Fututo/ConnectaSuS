@@ -1,0 +1,224 @@
+:root {
+    --primary: #1209c8;
+    --primary-dark: #160369;
+    --primary-soft: #eef2ff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --border: rgba(18, 9, 200, 0.12);
+    --white: #ffffff;
+}
+
+body {
+    background: linear-gradient(135deg, #f3f7ff 0%, #eef4ff 50%, #f8fbff 100%);
+    color: var(--text);
+}
+
+.cadastro-pagina {
+    min-height: calc(100vh - 79px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 20px;
+}
+
+.cadastro-a {
+    width: min(1200px, 100%);
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--border);
+    border-radius: 26px;
+    box-shadow: 0 28px 60px rgba(22, 3, 105, 0.12);
+    overflow: hidden;
+}
+
+.cadastro-destaque {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    color: var(--white);
+    padding: 64px 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cadastro-etiqueta {
+    display: inline-flex;
+    width: fit-content;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 18px;
+}
+
+.cadastro-destaque h1 {
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+.cadastro-destaque p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 28px;
+}
+
+.cadastro-beneficios {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 12px;
+}
+
+.cadastro-beneficios li {
+    position: relative;
+    padding-left: 28px;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 500;
+}
+
+.cadastro-beneficios li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #9fe7d1;
+    font-weight: 700;
+}
+
+.cadastro-cartao {
+    background: var(--white);
+    padding: 48px 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cadastro-cabecalho {
+    margin-bottom: 24px;
+}
+
+.cadastro-cabecalho h2 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 800;
+    color: var(--primary-dark);
+}
+
+.cadastro-cabecalho p {
+    margin: 8px 0 0;
+    color: var(--muted);
+}
+
+.cadastro-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cadastro-formulario .form-label {
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.cadastro-entrada {
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: #f9fbff;
+    transition: all 0.2s ease;
+    box-shadow: none;
+}
+
+.cadastro-entrada:focus {
+    border-color: rgba(18, 9, 200, 0.45);
+    background: var(--white);
+    box-shadow: 0 0 0 0.25rem rgba(18, 9, 200, 0.12);
+}
+
+.cadastro-botao {
+    margin-top: 12px;
+    padding: 14px 18px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--primary), #2a48ff);
+    font-weight: 700;
+    box-shadow: 0 12px 24px rgba(18, 9, 200, 0.22);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cadastro-botao:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 16px 28px rgba(18, 9, 200, 0.28);
+}
+
+.cadastro-alerta {
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+.cadastro-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid #eef2f7;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.cadastro-rodape-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid #eef2f7;
+    color: rgb(31, 31, 204);
+    font-size: 0.95rem;
+}    
+
+
+.cadastro-rodape a {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+    .cadastro-a {
+        grid-template-columns: 1fr;
+    }
+
+    .cadastro-destaque {
+        padding: 42px 28px;
+    }
+
+    .cadastro-cartao {
+        padding: 32px 22px;
+    }
+}
+
+@media (max-width: 520px) {
+    .cadastro-pagina {
+        padding: 28px 14px;
+    }
+
+    .cadastro-destaque h1 {
+        font-size: 2.1rem;
+    }
+
+    .cadastro-cabecalho h2 {
+        font-size: 1.7rem;
+    }
+}

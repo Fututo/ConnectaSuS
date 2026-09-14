@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+/* Styles for Sobre section (migrated from css/sobre.css) */
+.bg-light {
+    background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+}
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #1f2937;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+a {
+header .container {
+    padding: 28px 16px;
+}
+
+main.container h3 {
+    color: #1209c8;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+    text-decoration: none;
+}
+
+.link-logo {
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.imagem-logo {
+main.container p {
+    color: #33343a;
+    margin-bottom: 18px;
+}
+
+.card .card-body ul {
+    padding-left: 18px;
+    margin: 0;
+}
+
+.card .card-body ul li {
+    margin-bottom: 10px;
+}
+
+
+
+/* Small utility tweaks */
+.text-primary {
+    color: #1209c8 !important;
+}
+
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.marca {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.menu {
+    background: linear-gradient(135deg, #160369, #1209c8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu-acoes {
+    display: flex;
+    list-style: none;
+    gap: 13px;
+    margin: 8px;
+    padding: 5px;
+}
+
+.menu-acoes a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.menu-navegacao {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-navegacao a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.menu-navegacao a:hover {
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .menu-navegacao {
+        position: static;
+        transform: none;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+.site-footer {
+    width: 100%;
+    min-height: 329px;
+
+    background: linear-gradient(135deg, #160369, #1209c8);
+
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1184px;
+    min-height: 329px;
+    margin: 0 auto;
+    padding: 28px 22px 25px;
+    display: grid;
+    grid-template-columns:
+        1.05fr 1.08fr 1.08fr 0.95fr;
+}
+
+
+.footer-column {
+    min-width: 0;
+    padding: 0 38px;
+    border-right: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.footer-column:first-child {
+    padding-left: 0;
+}
+
+.footer-column:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.footer-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.footer-title h2 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+.footer-bolota {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.footer-bolota img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+
+.footer-about p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-top: 24px;
+}
+
+.social-icons a {
+    width: 43px;
+    height: 43px;
+    border: 1.5px solid rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.2s ease;
+}
+
+.social-icons a:hover {
+    background: #ffffff;
+    color: #f45100;
+    transform: translateY(-2px);
+}
+
+.footer-links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 16px;
+}
+
+.footer-links a {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.2;
+    transition: all 0.2s ease;
+}
+
+.footer-links a i {
+    font-size: 12px;
+}
+
+.footer-links a:hover {
+    transform: translateX(3px);
+    opacity: 0.8;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 23px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.contact-item i {
+    width: 18px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.contact-item span {
+    white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+    .menu {
+        padding: 16px 4%;
+    }
+
+    .logo-img {
+        width: 190px;
+    }
+
+    .pesquisa {
+        order: 3;
+        flex-basis: 100%;
+        max-width: none;
+    }
+
+    .menu-links {
+        gap: 14px;
+    }
+
+    .menu-links a,
+    .Entrar-container {
+        font-size: 15px;
+    }
+
+    .parceiro {
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .parceiro-texto h2 {
+        font-size: 36px;
+    }
+
+    .vantagens-escola h2 {
+        font-size: 32px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px 0;
+    }
+
+    .footer-column:nth-child(2) {
+        border-right: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu {
+        position: relative;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .logo-link {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo-img {
+        width: min(230px, 75vw);
+    }
+
+    .menu-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px 14px;
+    }
+
+    .menu-links a {
+        font-size: 14px;
+    }
+
+    .Entrar-container {
+        min-width: 90px;
+        padding: 9px 15px;
+    }
+
+    .container-banner {
+        width: 94%;
+        margin: 22px auto 34px;
+        border-radius: 14px;
+    }
+
+    .parceiro {
+        width: 94%;
+        margin: 34px auto;
+        padding: 28px 22px;
+        border-radius: 18px;
+        display: block;
+    }
+
+    .parceiro-texto h2 {
+        font-size: 30px;
+        line-height: 1.15;
+    }
+
+    .btn-parceiro {
+        display: block;
+        width: 100%;
+        padding: 13px 18px;
+        text-align: center;
+    }
+
+    .vantagens-escola {
+        width: 94%;
+        margin: 42px auto;
+    }
+
+    .vantagens-escola h2 {
+        font-size: 27px;
+        margin-bottom: 25px;
+    }
+
+    .vantagens-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .vantagem-card {
+        padding: 24px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        padding: 30px 24px;
+    }
+
+    .footer-column,
+    .footer-column:nth-child(2) {
+        padding: 0 0 24px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+    }
+
+    .footer-column:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .footer-title {
+        margin-bottom: 18px;
+    }
+
+    .contact-item span {
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+}
+
+@media (min-width: 1600px) {
+    .parceiro,
+    .vantagens-escola {
+        max-width: 1500px;
+    }
+
+    .footer-container {
+        max-width: 1500px;
+    }
+}
+ 
