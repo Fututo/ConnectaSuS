@@ -18,7 +18,7 @@
       </a>
 
       <ul class="menu-navegacao">
-        <li><a href="index.php">Início</a></li>
+        <li><a href="index.php">Iníciohalf</a></li>
         <li><a href="teste.php">Serviços</a></li>
         <li><a href="contato.php">Contato</a></li>
         <li><a href="#sobre">Sobre</a></li>
